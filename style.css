@@ -1,0 +1,15 @@
+.home {
+    display: block;
+}
+
+.bio {
+    display: none;
+}
+
+.resume {
+    display: none;
+}
+
+.projects {
+    display: none;
+}
