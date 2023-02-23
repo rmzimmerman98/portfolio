@@ -9,33 +9,47 @@
     <script src="app.js"></script>
 </head>
 <body>
-<div class="container">
     <header id="header">
-        <a href="#" id="homeButton">Home</a>
-        <a href="#" id="bioButton">Bio</a>
-        <a href="#" id="resumeButton">Resume</a>
-        <a href="#" id="projectsButton">Projects</a>
+        <button id="homeButton">Home</button>
+        <button id="bioButton">Bio</button>
+        <button id="resumeButton">Resume</button>
+        <button id="projectsButton">Projects</button>
     </header>
-    <div class="home">
+<div class="container">
+    <div id="home">
         <p>
             The home page of this whole shindig. I'll fill this out with info later, but for now, this is just a test drive.
         </p>
     </div>
-    <div class="bio">
+    <div id="bio">
         <p>
             And this is the test paragraph for the bio. Not quite sure what I'll put here, I'm nowhere near that interesting, but I'll figure it out.
         </p>
     </div>
-    <div class="resume">
+    <div id="resume">
         <p>
             Not quite sure what I'm going to do here, especially since I have no resume. Probably some loren ipsum text in a picture, some kind of slide reveal? I'll figure it out later
         </p>
     </div>
-    <div class="projects">
+    <div id="projects">
         <p>
             And the potential carousel goes here. I'll make it a list at first, maybe make a funny little link that leads back to the home page. Idk, we'll see.
         </p>
     </div>
+    <div id="modal">
+        <div id="modalText">
+            <h1>Links</h1>
+                <a href="https://github.com/rmzimmerman98">GitHub</a><br>
+                <a href="https://www.linkedin.com/in/randall-zimmerman/">Linkedin</a>
+                <p>The rest of the links are a work in progress.</p>
+            <div id="modalFooter">
+                <button class="modalButton" id="close">Close</a>
+            </div>
+        </div>
+        </div>
+    <footer id="links">
+        <button class="modalButton" id="linksButton">Links</button>
+    </footer>
 </div>
 </body>
 </html>

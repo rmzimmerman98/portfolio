@@ -1,15 +1,67 @@
-.home {
+body {
+    background-color: aliceblue;
+    font-family: Courier;
+}
+
+header {
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    /* background-color: black; */
+    position: fixed;
+    top: 0;
+    text-align: center;
+    justify-content: space-evenly
+}
+
+footer {
+    position: fixed;
+    right:1cm;
+    bottom: 1cm;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home {
     display: block;
 }
 
-.bio {
+#bio {
     display: none;
 }
 
-.resume {
+#resume {
     display: none;
 }
 
-.projects {
+#projects {
     display: none;
+}
+
+#modal {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+#modalText {
+	background-color: white;
+	height: 200px;
+	width: 300px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	font-family:Courier;
+}
+
+#modalFooter {
+	text-align: right;
 }
