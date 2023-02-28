@@ -3,6 +3,11 @@ body {
     font-family: Courier;
 }
 
+.dark {
+    background-color: #4e4880;
+    color:#f0f8ff
+}
+
 header {
     display: flex;
     height: 5vh;

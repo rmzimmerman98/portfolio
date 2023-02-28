@@ -33,22 +33,19 @@ $(() => {
         $openProjects.css('display', 'block')
     })
 
-    const $body = $('body')
-    $body.css('background-color', 'rgb(240, 248, 255)')
-
     $('#darkButton').on('click', () => {
-        $body.css('background-color', '#4e4880')
-        $('#darkMode').css('display', 'none')
-        $('#lightMode').css('display', 'block')
-        console.log('Dark');
+        $('body').toggleClass('dark')
+        // $('#darkMode').css('display', 'none')
+        // $('#lightMode').css('display', 'block')
+        // console.log('Dark');
     })
 
-    $('#lightButton').on('click', () => {
-        $body.css('background-color', 'f0f8ff')
-        $('#darkMode').css('display', 'block')
-        $('#lightMode').css('display', 'none')
-        console.log('Light');
-    })
+    // $('#lightButton').on('click', () => {
+    //     $('body').removeClass('dark')
+    //     $('#darkMode').css('display', 'block')
+    //     $('#lightMode').css('display', 'none')
+    //     console.log('Light');
+    // })
 
     const $openButton = $('#linksButton') 
     const $modal = $('#modal')
