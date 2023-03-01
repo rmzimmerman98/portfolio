@@ -33,20 +33,6 @@ $(() => {
         $openProjects.css('display', 'block')
     })
 
-    $('#darkButton').on('click', () => {
-        $('body').toggleClass('dark')
-        // $('#darkMode').css('display', 'none')
-        // $('#lightMode').css('display', 'block')
-        // console.log('Dark');
-    })
-
-    // $('#lightButton').on('click', () => {
-    //     $('body').removeClass('dark')
-    //     $('#darkMode').css('display', 'block')
-    //     $('#lightMode').css('display', 'none')
-    //     console.log('Light');
-    // })
-
     const $openButton = $('#linksButton') 
     const $modal = $('#modal')
     const $closeButton = $('#close')
@@ -62,5 +48,22 @@ $(() => {
     }
 
     $closeButton.on('click', closeModal)
+    
+    $('#darkButton').on('click', () => {
+        $('body').toggleClass('dark')
+        $('#modalText').toggleClass('modalDark')
+        // $('#darkMode').css('display', 'none')
+        // $('#lightMode').css('display', 'block')
+        // console.log('Dark');
+    })
+
+    // $('#lightButton').on('click', () => {
+    //     $('body').removeClass('dark')
+    //     $('#darkMode').css('display', 'block')
+    //     $('#lightMode').css('display', 'none')
+    //     console.log('Light');
+    // })
+
+
 })
 
